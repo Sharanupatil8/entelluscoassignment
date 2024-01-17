@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .navbar-brand img {
   height: 80px;
 }
@@ -208,7 +212,8 @@ p {
 #carouselExampleIndicators {
   position: relative;
 }
- .carousel-control-prev , .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   background-color: #193566 !important;
   height: 30px !important;
   width: 30px !important;
@@ -216,7 +221,6 @@ p {
   position: absolute;
   top: 50%;
 }
-
 
 footer {
   background-color: #193566;
@@ -227,4 +231,16 @@ footer {
 .logo {
   width: 100px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    border-right: 0;
+  }
+
+  form {
+    position: relative;
+    margin-top: -100px;
+    z-index: 11;
+  }
 }
